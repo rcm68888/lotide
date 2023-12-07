@@ -4,10 +4,9 @@
   } else {
     console.log(`🛑  Assertion failed: ${actual} !== ${expected}`);
   }
-};
-module.exports = assertEqual;
+};*/
 
-// const assertEqual = require('./assertEqual');*/
+//const assertEqual = require('./assertEqual');
 
 const head = function(actual) {
   return actual[0];
