@@ -12,7 +12,7 @@ const eqArrays = function (actual, expected){
 
 const eqArrays = require('./eqArrays.js');
 
-const assertArrayEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   let equivalentArrays = eqArrays(actual, expected);
   if (equivalentArrays === true) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
@@ -20,4 +20,4 @@ const assertArrayEqual = function(actual, expected) {
     console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-module.exports = assertArrayEqual;
+module.exports = assertArraysEqual;

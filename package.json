@@ -1,6 +1,6 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
+  "name": "@rcm68888/lotide",
+  "version": "1.0.1",
   "description": "",
   "main": "assertEqual.js",
   "directories": {
