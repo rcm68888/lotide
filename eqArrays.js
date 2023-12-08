@@ -1,11 +1,11 @@
 const eqArrays = function (actual, expected){
-  let match = true
+  let match = true;
   for(let i =0; i < actual.length; i ++){
     if (actual[i] !== expected[i]) {
-      match = false   
-    }  
+      match = false;  
+    }
   } 
-  return match
+  return match;
 }
 module.exports = eqArrays;
 
