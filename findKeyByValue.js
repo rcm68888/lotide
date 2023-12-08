@@ -20,6 +20,8 @@ for (let i= 0; i < loop.length;i ++){
  return output
 } 
 
+module.exports = findKeyByValue;
+
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",

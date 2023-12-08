@@ -38,6 +38,8 @@ const eqObjects = function(object1, object2) {
   return status; 
 };
 
+module.exports = eqObjects;
+
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
