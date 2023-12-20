@@ -1,4 +1,4 @@
-const assertArrayEqual = require('./assertArraysEqual.js');
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 const middle = function(array) {
   let centre = Math.floor(array.length / 2)
@@ -19,3 +19,14 @@ const middle = function(array) {
    return newArray
 }
 module.exports = middle;
+
+assertArraysEqual(middle([1]), []);
+assertArraysEqual(middle([1, 2]), []);
+
+// Odd Number of Elements
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4, 5]), []);
+
+// // Even Number of Elements
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);

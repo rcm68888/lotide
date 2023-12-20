@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('../assertEqual.js');
 assertEqual([5,6,7], 5);
 assertEqual(["Hello", "Lighthouse", "Labs"], "Hello");
 assertEqual(1, 1);

@@ -1,8 +1,8 @@
 {
   "name": "@rcm68888/lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A clone of Lodash which is called Lotide.  A library of small functions to exercise some programming chops throughout the learning journey at Lighthouse Lab",
-  "main": "assertEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
