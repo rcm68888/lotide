@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @rcm6888/lotide`
+`npm install @rcm68888/lotide`
 
 **Require it:**
 
-`const _ = require('@rcm6888/lotide');`
+`const _ = require('@rcm68888/lotide');`
 
 **Call it:**
 
@@ -26,36 +26,36 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-➛ const assertArraysEqual = function(actual, expected): Is passed two arrays and determines if they are equal or not.
+➛ assertArraysEqual(actual, expected): determines if arrays are identical
 
-➛ const assertEqual = function(actual, expected): Is passed two strings or numbers and determines if they are equal or not.
+➛ assertEqual(actual, expected): determines if the two items are identical
 
-➛ const assertObjectsEqual = function(actual, expected): Is passed two objects and determines if they are equal or not.
+➛ assertObjectsEqual(actual, expected): determines if the two objects are identical
 
-➛ const countLetters = function (string): Takes in a string and counts the number of letters in it.
+➛ countLetters(inputString): counts how many occurences of the same letter in a string
 
-➛ const countOnly = function(allItems, itemsToCount): Takes in an array of strings and only returns what the object itemsToCount specifies.
+➛ countOnly(allItems, itemsToCount): counts the number of times the name in an object occurs
 
-➛ const eqArrays = function (actual, expected): Takes two arrays and outputs whether or not they are equal to each other.
+➛ eqArrays(actual, expected): checks if two arrays are equal or identical
 
-➛ const eqObjects = function(object1, object2): Takes two objects and outputs if they are equal or not.
+➛ eqObjects(object1, object2): takes in two objects and returns true if they are a perfect match or false if not.
 
-➛ const findKey = function(object, callback): Takes an object and a key: value and returns its key.
+➛ findKey(object, callback): takes an object and a callback function, calls the function to report the first occurence of a key
 
-➛ const findKeyByValue = function (object, value): Takes an object and a value and returns the key for that value.
+➛ findKeyByValue(object, value): takes an object and a value and returns the first key which contains the given value
 
-➛ const flatten = function(array): Given an array with embedded arrays inside of it it will return a single array.
+➛ flatten(array): takes in an array and if the array has other arrays, it then removes the nested arrays
 
-➛ const head = function(actual): Returns the first item in an array.
+➛ head(actual): returns the first item in an array.
 
-➛ const letterPositions = function(sentence): Takes in a string and returns an object that tells when each letter in the string occurs.
+➛ letterPositions(sentence): takes in a sentence and returns the indices where each letter occurs in the sentence
 
-➛ const map = function(array, callback): Takes in an array of strings or numbers and returns a value for each item in the array of that index.
+➛ map(array, callback): takes in an array and a callback function and runs the callback on the item
 
-➛ const middle = function(array): Takes in an array and returns the middle value. If the array length is even it will return the two middle values.
+➛ middle(array): takes in an array and returns the middle element of the input array
 
-➛ const tail = function(actual): Takes in an array and returns the last value in the array.
+➛ tail(actual): takes in an array and returns the last value in the array
 
-➛ const takeUntil = function(array, callback): Takes in an array and returns a new array that stops where the callback indicates.
+➛ takeUntil(array, callback): takes in an array, returns a new array and stops where the callback returns a truthy value
 
-➛ const without = function(array, remove): Takes in an array and an item to remove from the array and returns a new array without that item.
+➛ without(array, remove): takes in an array and returns a new array with only those elements from source that are not removed

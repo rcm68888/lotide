@@ -18,9 +18,9 @@ const letterPositions = function (sentence) {
 
 module.exports = letterPositions;
 
-console.log(letterPositions("hello"));
+console.log(letterPositions("zebra is in the zoo"));
 
-const actual = letterPositions("hallo canada");
-assertArraysEqual(actual["a"],[1,7,9,11]);
-assertArraysEqual(actual["a"],[1,6,8,9]);
-assertArraysEqual(actual["l"],[2,3]);
+const actual = letterPositions("zebra is in the zoo");
+assertArraysEqual(actual["z"],[0,16]);
+assertArraysEqual(actual["o"],[17,18]);
+assertArraysEqual(actual["i"],[6,9]);

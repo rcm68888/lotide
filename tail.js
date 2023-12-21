@@ -1,7 +1,8 @@
 const assertEqual = require ('./assertEqual');
 
-const tail = function(actual) {
-  return actual.slice(1);
+// returns the array without the input array's first element
+const tail = function(array) {
+  return array.slice(1);
 };
 
 module.exports = tail;
@@ -14,6 +15,3 @@ assertEqual(result[1], "Labs");
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
 assertEqual(words.length,3);
- 
-const resultz = tail([2]);
-assertEqual(resultz[0],2);
