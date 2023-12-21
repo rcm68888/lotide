@@ -32,13 +32,13 @@ The following functions are currently implemented:
 
 ➛ assertObjectsEqual(actual, expected): determines if the two objects are identical
 
-➛ countLetters(inputString): counts how many occurences of the same letter in a string
+➛ countLetters(inputString): counts the number of occurences of the same letter in a given string
 
 ➛ countOnly(allItems, itemsToCount): counts the number of times the name in an object occurs
 
 ➛ eqArrays(actual, expected): checks if two arrays are equal or identical
 
-➛ eqObjects(object1, object2): takes in two objects and returns true if they are a perfect match or false if not.
+➛ eqObjects(object1, object2): takes in two objects and returns true if they are a perfect match or false if not
 
 ➛ findKey(object, callback): takes an object and a callback function, calls the function to report the first occurence of a key
 
@@ -46,7 +46,7 @@ The following functions are currently implemented:
 
 ➛ flatten(array): takes in an array and if the array has other arrays, it then removes the nested arrays
 
-➛ head(actual): returns the first item in an array.
+➛ head(actual): returns the first item in an array
 
 ➛ letterPositions(sentence): takes in a sentence and returns the indices where each letter occurs in the sentence
 
