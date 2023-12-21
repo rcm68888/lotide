@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+//determines if the two items are identical
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅  Assertion passed: ${actual} === ${expected}`);

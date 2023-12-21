@@ -1,5 +1,6 @@
 const eqArrays = require('./eqArrays.js');
 
+//determines if arrays are identical
 const assertArraysEqual = function(actual, expected) {
   console.log(eqArrays(actual, expected));
   if (eqArrays(actual, expected)) {

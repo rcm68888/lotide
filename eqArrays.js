@@ -1,3 +1,4 @@
+//checks if two arrays are equal or identical
 const eqArrays = function (actual, expected){
   let match = true;
   for(let i =0; i < actual.length; i ++){

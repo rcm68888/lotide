@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual')
 
+//counts the number of times the name in an object occurs
 const countOnly = function(allItems, itemsToCount) {
   const results = {}
   for (const item of allItems) {

@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual')
 
+//counts the number of occurences of the same letter in a given string
 const countLetters = (string) => {
   const arr = string.replace(/ /g, '').split('');
   const results = {};

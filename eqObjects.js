@@ -1,6 +1,7 @@
 const eqArrays = require('./eqArrays');
 const assertEqual = require('./assertEqual');
 
+//takes in two objects and returns true if they are a perfect match or false if not
 const eqObjects = function(object1, object2) {
   let keys = Object.keys(object1);
   let status = true;

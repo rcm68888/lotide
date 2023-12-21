@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+//takes an object and a value and returns the first key which contains the given value
 const findKeyByValue = function (object, value){
   let loop = Object.values(object)
   let key = (Object.keys(object))

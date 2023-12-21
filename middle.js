@@ -1,5 +1,6 @@
 const assertArraysEqual = require('./assertArraysEqual.js');
 
+//akes in an array and returns the middle element of the input array
 const middle = function(array) {
   let centre = Math.floor(array.length / 2)
   let newArray = []

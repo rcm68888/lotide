@@ -1,6 +1,7 @@
 const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 
+//takes in an array, returns a new array and stops where the callback returns a truthy value
 const takeUntil = (array, callback) => {
   let newArray = [];
   for (let item in array) {
@@ -13,10 +14,9 @@ const takeUntil = (array, callback) => {
 }
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
-//console.log(results1);
+
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
-//console.log(results2);
 
 assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
 

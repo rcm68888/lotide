@@ -1,6 +1,7 @@
 const eqObjects = require('./eqObjects')
 const eqArrays = require('./eqArrays')
 
+//determines if the two objects are identical
 const assertObjectsEqual = (actual, expected) => {
   const inspect = require('util').inspect;
   if (eqObjects(actual, expected)) {

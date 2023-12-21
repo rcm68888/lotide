@@ -1,6 +1,7 @@
 const eqArrays = require('./eqArrays');
 const assertArraysEqual = require ('./assertArraysEqual');
 
+//takes in a sentence and returns the indices where each letter occurs in the sentence
 const letterPositions = function (sentence) {
   const results = {};
   let index = 0;

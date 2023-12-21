@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+//takes an object and a callback function, calls the function to report the first occurence of a key
 const findKey = (object, callback) => {
   let result = "";
   for (let item in object) {

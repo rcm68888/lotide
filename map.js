@@ -3,6 +3,7 @@ const assertArraysEqual = require('./assertArraysEqual');
 
 const words = ["ground", "control", "to", "major", "tom"];
 
+//takes in an array and a callback function and runs the callback on the item
 const map = function(array, callback) {
   const results = [];
   for (let item of array){
