@@ -1,17 +1,56 @@
-const assertEqual = require('./assertEqual')
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅  Assertion passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑  Assertion failed: ${actual} !== ${expected}`);
+  }
+};
 
-//counts the number of occurences of the same letter in a given string
-const countLetters = (string) => {
-  const arr = string.replace(/ /g, '').split('');
-  const results = {};
-  for (const item of arr) {
-    if (results[item]){
-      results[item] += 1;
-    } else {
-      results[item] = 1;
+module.exports = assertEqual;
+const letters = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+]
+const countLetters = function (string) {
+  const results = {}
+  // let newString = string.split("")
+  // console.log(newString)
+  for (const item of string){
+
+    if (letters.includes(item)) {
+
+      if (results[item]){
+        results[item] += 1;
+      } else {
+        results[item] = 1;
+      }
     } 
   }
-  return results;
+  return results
 }
 
 const actual = countLetters("lighthouse in the house")
@@ -25,7 +64,6 @@ assertEqual(actual['o'], 2)
 assertEqual(actual['u'], 2)
 assertEqual(actual['s'], 2)
 assertEqual(actual['n'], 1)
-assertEqual(actual['e'], 3)
 assertEqual(actual[''], undefined)
 
 module.exports = countLetters;

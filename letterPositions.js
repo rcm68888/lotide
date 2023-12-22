@@ -1,27 +1,36 @@
-const eqArrays = require('./eqArrays');
-const assertArraysEqual = require ('./assertArraysEqual');
-
-//takes in a sentence and returns the indices where each letter occurs in the sentence
-const letterPositions = function (sentence) {
-  const results = {};
-  let index = 0;
-  for (const item of sentence) {
-    if (results[item]) {
-      results[item].push(index);
-    } else {
-      results[item] = [index];
+const eqArrays = function(actual, expected) {
+  let match = true;
+  for (let i = 0; i < actual.length; i ++) {
+    if (actual[i] !== expected[i]) {
+      match = false;
     }
-    index++;
+  } return match;
+
+};
+const assertArrayEqual = function(actual, expected) {
+  let equivalentArrays = eqArrays(actual, expected);
+  if (equivalentArrays === true) {
+    console.log(`✅  Assertion Passed: ${actual} === ${expected}`);
+  } else if (equivalentArrays === false) {
+    console.log(`🛑  Assertion Failed: ${actual} !== ${expected}`);
   }
-  delete results[' '];
+};
+
+const letterPositions = function(sentence) {
+  const results = {};
+  sentence = sentence.replace(/\s/g, '');
+  for (let i = 0; i < sentence.length; i ++) {
+    if (results[sentence[i]]) {
+      results[sentence[i]].push(i);
+    } else {
+      results[sentence[i]] = [i];
+    }
+  }
   return results;
 };
 
-module.exports = letterPositions;
+console.log(letterPositions("hello"));
 
-console.log(letterPositions("zebra is in the zoo"));
-
-const actual = letterPositions("zebra is in the zoo");
-assertArraysEqual(actual["z"],[0,16]);
-assertArraysEqual(actual["o"],[17,18]);
-assertArraysEqual(actual["i"],[6,9]);
+const actual = letterPositions("hallo canada");
+assertArrayEqual(actual["a"],[1,6,8,10]);
+assertArrayEqual(actual["a"],[1,6,8,9]);
