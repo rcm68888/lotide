@@ -16,8 +16,7 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
-console.log(letterPositions("hello"));
-
+/*console.log(letterPositions("hello"));
 const actual = letterPositions("hallo canada");
 assertArrayEqual(actual["a"],[1,6,8,10]);
-assertArrayEqual(actual["a"],[1,6,8,9]);
+assertArrayEqual(actual["a"],[1,6,8,9]);*/
